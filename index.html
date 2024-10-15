@@ -75,20 +75,20 @@
             <h1>ФОРМА ДЛЯ ОГОЛОШЕННЬ 📝</h1>
             <hr>
         </div>
-        <div class="forma">
-            <form action="" method="get" class="form-example">
-                <div class="form-example">
-                  <input type="text" name="name" id="number" placeholder="Номер телефону*" />
-                </div>
-                <div class="form-example">
-                  <input type="name" name="text" id="name" placeholder="Рубрика*" />
-                </div>
-                <div class="form-example1">
-                    <textarea id="text-input" name="text" placeholder="Текст оголошення"></textarea>
-                  </div>
-                <div class="form-example">
-                  <input type="submit" value="Надіслати" id="submit" />
-                </div>
+         <div class="forma">
+        <form action="send_mail.php" method="POST" class="form-example">
+            <div class="form-example">
+                <input type="text" name="phone" id="number" placeholder="Номер телефону*" required />
+            </div>
+            <div class="form-example">
+                <input type="text" name="rubric" id="name" placeholder="Рубрика*" required />
+            </div>
+            <div class="form-example1">
+                <textarea id="text-input" name="message" placeholder="Текст оголошення" required></textarea>
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Надіслати" id="submit" />
+            </div>
               </form>
     </div>
     </section>
